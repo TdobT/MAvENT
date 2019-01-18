@@ -15,8 +15,8 @@
     <string name="new_york">New York</string>
     <string name="bellante">Bellante</string>
 
-    <string name="server_address_get_url" translatable="false">http://deselmo.com:55000/listEvents</string>
-    <string name="server_address_post_url" translatable="false">http://deselmo.com:55000/createEvent</string>
+    <string name="server_address_get_url" translatable="false">***</string>
+    <string name="server_address_post_url" translatable="false">***</string>
 
     <string name="action_settings" translatable="false">Settings</string>
     <string name="title_activity_settings">Settings</string>
