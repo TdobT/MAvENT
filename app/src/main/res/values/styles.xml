@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="EditTextTheme">
+        <item name="colorControlNormal">@android:color/holo_blue_bright</item>
+    </style>
+
+    <style name="CreateButton" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#00BCD4</item>
+        <item name="android:textColor">#222</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/>
+
+</resources>

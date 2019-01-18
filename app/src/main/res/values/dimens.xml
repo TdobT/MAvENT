@@ -1,0 +1,32 @@
+<resources>
+    <dimen name="fab_margin">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="create_event_image_height">230dp</dimen>
+    <dimen name="create_event_image_width_ls">330dp</dimen>
+
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+
+    <dimen name="icon_width">80dp</dimen>
+    <dimen name="icon_height">80dp</dimen>
+
+    <dimen name="margin_end">8dp</dimen>
+    <dimen name="margin_start">8dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="text_size">17sp</dimen>
+    <dimen name="text_size_big">30sp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+
+    <dimen name="margin_top_portrait">15dp</dimen>
+    <dimen name="margin_bottom">8dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="pager_tab_padding_bottom">4dp</dimen>
+    <dimen name="pager_tab_padding_top">4dp</dimen>
+    <dimen name="pager_tab_strip_height">60dp</dimen>
+
+    <dimen name="inset_logo_padding">8dp</dimen>
+</resources>

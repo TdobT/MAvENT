@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name" translatable="false">Styled Map</string>
+    <string name="title_activity_maps">MAvENT</string>
+
+    <string name="app_needs_permission">This App needs the Position Permission to work.</string>
+
+    <string name="police_stations">Police Stations in Victoria</string>
+    <string name="medicare">Medicare Offices</string>
+
+    <string name="police_stations_url">http://mioserver.omg.meneserveuno.police.org</string>
+    <string name="medicare_url">http://mioserver.omg.meneserveuno.medicare.org</string>
+
+    <string name="error_location_provider">Impossibile comunicare col provider</string>
+    <string name="fantalandia">Fantalandia</string>
+    <string name="new_york">New York</string>
+    <string name="bellante">Bellante</string>
+
+    <string name="server_address_get_url" translatable="false">http://deselmo.com:55000/listEvents</string>
+    <string name="server_address_post_url" translatable="false">http://deselmo.com:55000/createEvent</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="title_night_mode">Night Mode</string>
+    <string name="pref_night_mode_key" translatable="false">Night Mode</string>
+
+    <string name="last_location_lat" translatable="false">last_location_lat</string>
+    <string name="last_location_lng" translatable="false">last_location_lng</string>
+    <string name="last_user_location" translatable="false">last_user_location</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="signup">Sign up</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale_contacts">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="request_permission_snackbar">Location Permission Request</string>
+    <string name="menu_create_event">Create event</string>
+    <string name="menu_join_event">Join event</string>
+
+    <string name="customized_event">Customized Event</string>
+    <string name="event_in_your_position">Event in your Position</string>
+    <string name="create_event_descript">Create your event:</string>
+    <string name="add_photo">ADD PHOTO</string>
+    <string name="event_name_plain_text">Event name</string>
+    <string name="create_event">Create Event</string>
+    <string name="textViewTime" />
+    <string name="text_view_date">Today</string>
+    <string name="test_view_end_date">Ending Date</string>
+    <string name="text_view_ending_time">Ending Time</string>
+    <string name="create_event_place">Place</string>
+    <string name="create_event_details">Details"</string>
+    <string name="guests_invite_people">The guests can invite other people"</string>
+    <string name="co_organizers">Co-organizers</string>
+
+    <string name="today">today</string>
+    <string name="tomorrow">tomorrow</string>
+    <string name="start_before_event_error">The event cannot end before it started!</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="event_image">Event Image</string>
+    <string name="select_image">Select Image</string>
+    <string name="create">Create</string>
+
+    <string name="mavent_app_name">MAvENT</string>
+    <string name="email">emanuele.aurora@gmail.com</string>
+    <string name="import_string">Import</string>
+    <string name="gallery_string">Gallery</string>
+    <string name="slideshow_string">Slideshow</string>
+    <string name="tools_string">Tools</string>
+    <string name="communicate_string">Communicate</string>
+    <string name="share_string">Share</string>
+    <string name="send_string">Send</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_title">Menu</string>
+    <string name="create_event_title">Create Event</string>
+
+    <string name="contact_photo">Contact Photo</string>
+    <string name="admin_contact_star">Admin Contact Star</string>
+    <string name="bg_img_event_description">Background Image of the Event</string>
+    <string name="drawer_image">Drawer Image</string>
+
+    <string name="bad_password_error_start">"Password must be Between "</string>
+    <string name="bad_password_error_mid">" and "</string>
+    <string name="bad_password_error_end">" characters"</string>
+
+    <string name="login_failed">Login failed</string>
+    <string name="invalid_email">Enter a valid email address</string>
+    <string name="now_enought_char_error">minimum characters:</string>
+
+    <string name="profile_contact_image">Profile Contact Image</string>
+    <string name="contact_key_parcelable">contact_key</string>
+</resources>

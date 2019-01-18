@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    tools:context="com.CreateEvent.CreateEventTypeFragment">
+
+    <Button
+        android:id="@+id/button_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginRight="@dimen/margin_end"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginLeft="@dimen/margin_start"
+        android:text="@string/create"
+
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:theme="@style/CreateButton"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/create_event_image_height"
+        android:background="@color/colorCreateEventBG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+        <Button
+            android:id="@+id/open_image_button"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_add_to_photos_white_24px"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableStart="@drawable/ic_add_to_photos_white_24px"
+
+            android:text="@string/add_photo"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/event_bg_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:contentDescription="@string/bg_img_event_description" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toTopOf="@id/button_create_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_layout_up">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_layout_up">
+
+            <EditText
+                android:id="@+id/editTextEventName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginRight="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:hint="@string/event_name_plain_text"
+                android:textSize="@dimen/text_size_big"
+                android:theme="@style/EditTextTheme"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginRight="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_portrait"
+                android:freezesText="true"
+                android:textSize="@dimen/text_size"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewCalendar"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEventName" />
+
+            <TextView
+                android:id="@+id/textViewCalendar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:drawableLeft="@drawable/ic_schedule_white_24px"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableStart="@drawable/ic_schedule_white_24px"
+                android:freezesText="true"
+                android:inputType="none"
+                android:textSize="@dimen/text_size"
+
+                app:layout_constraintBaseline_toBaselineOf="@+id/textViewTime"
+                app:layout_constraintEnd_toStartOf="@+id/textViewTime"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewEndCalendar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_portrait"
+                android:drawableLeft="@drawable/ic_schedule_white_24px"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableStart="@drawable/ic_schedule_white_24px"
+                android:freezesText="true"
+                android:hint="@string/test_view_end_date"
+                android:textSize="@dimen/text_size"
+
+                app:layout_constraintEnd_toStartOf="@+id/textViewEndDatetime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCalendar" />
+
+            <TextView
+                android:id="@+id/textViewEndDatetime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginRight="@dimen/margin_end"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:freezesText="true"
+                android:hint="@string/text_view_ending_time"
+                android:textSize="@dimen/text_size"
+
+                app:layout_constraintBaseline_toBaselineOf="@+id/textViewEndCalendar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewEndCalendar" />
+
+            <TextView
+                android:id="@+id/textViewPlace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginRight="@dimen/margin_end"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_portrait"
+                android:drawableLeft="@drawable/ic_place_white_24px"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableStart="@drawable/ic_place_white_24px"
+                android:hint="@string/create_event_place"
+
+                android:inputType="none"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEndCalendar" />
+
+            <EditText
+                android:id="@+id/textViewDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginRight="@dimen/margin_end"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_portrait"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_create_white_24px"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableStart="@drawable/ic_create_white_24px"
+                android:hint="@string/create_event_details"
+                android:inputType="textMultiLine"
+
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPlace" />
+
+            <TextView
+                android:id="@+id/textViewInvite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_portrait"
+                android:drawableLeft="@drawable/ic_mail_white_24px"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableStart="@drawable/ic_mail_white_24px"
+                android:hint="@string/guests_invite_people"
+                android:textSize="@dimen/text_size"
+
+                app:layout_constraintEnd_toStartOf="@+id/checkBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetails" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginRight="@dimen/margin_end"
+                android:layout_marginLeft="@dimen/margin_start"
+
+                app:layout_constraintBaseline_toBaselineOf="@+id/textViewInvite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewInvite" />
+
+            <TextView
+                android:id="@+id/textViewCoorganizers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginRight="@dimen/margin_end"
+                android:layout_marginLeft="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_portrait"
+                android:drawableLeft="@drawable/ic_group_white_24px"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableStart="@drawable/ic_group_white_24px"
+
+                android:hint="@string/co_organizers"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewInvite" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
+

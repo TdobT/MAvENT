@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="pref_night_mode_entries">
+        <item>@string/night_label</item>
+        <item>@string/day_label</item>
+        <item>@string/auto_label</item>
+    </string-array>
+
+    <string-array name="pref_night_mode_values">
+        <item>@string/night</item>
+        <item>@string/day</item>
+        <item>@string/auto</item>
+    </string-array>
+
+    <string name="night_label">Night</string>
+    <string name="day_label">Day</string>
+    <string name="auto_label">Auto</string>
+
+    <string name="day" translatable="false">day</string>
+    <string name="night" translatable="false">night</string>
+    <string name="auto" translatable="false">auto</string>
+
+</resources>
